@@ -1,0 +1,11 @@
+;Diente;Cabello;Respira;Patas;Especie
+0;True;True;True;True;Mamifero
+1;True;True;True;True;Mamifero
+2;True;False;True;False;Reptil
+3;False;True;True;True;Mamifero
+4;True;True;True;True;Mamifero
+5;True;True;True;True;Mamifero
+6;True;False;False;False;Reptil
+7;True;False;True;False;Reptil
+8;True;True;True;True;Mamifero
+9;False;False;True;True;Reptil
