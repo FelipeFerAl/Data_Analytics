@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(56.11111111111112, 354.88888888888886)" />
+		<node id="1" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Tabla" position="(340.55555555555554, 354.55555555555566)" />
+		<node id="2" name="Distributions" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" project_name="Orange3" version="" title="Distribuciones" position="(582.4444444444443, 158.33333333333337)" />
+		<node id="3" name="Venn Diagram" qualified_name="Orange.widgets.visualize.owvenndiagram.OWVennDiagram" project_name="Orange3" version="" title="Venn Diagram" position="(752.4444444444443, 349.33333333333326)" />
+		<node id="4" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Fumador" position="(571.4444444444443, 250.33333333333337)" />
+		<node id="5" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Presión_Grupal" position="(576.4444444444443, 439.33333333333326)" />
+		<node id="6" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Alcohólicos" position="(575.4444444444443, 346.33333333333326)" />
+		<node id="7" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Scatter Plot" position="(573.0, 537.8888888888889)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+		<link id="2" source_node_id="1" sink_node_id="4" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+		<link id="3" source_node_id="1" sink_node_id="5" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+		<link id="4" source_node_id="4" sink_node_id="3" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="5" source_node_id="5" sink_node_id="3" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="6" source_node_id="1" sink_node_id="6" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+		<link id="7" source_node_id="6" sink_node_id="3" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="8" source_node_id="1" sink_node_id="7" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+	</links>
+	<annotations>
+		<text id="0" type="text/plain" rect="(8.0, 90.0, 268.0, 113.0)" font-family="MS Shell Dlg 2" font-size="16">Se carga un archivo de las características de los fumadores en Estados Unidos, por ejemplo: Género, Edad, si es Fumador, si sufre Ansiedad, entre otros... </text>
+		<arrow id="1" start="(72.0, 328.0)" end="(132.0, 207.0)" fill="#C1272D" />
+		<text id="2" type="text/plain" rect="(85.0, 458.0, 272.0, 113.0)" font-family="MS Shell Dlg 2" font-size="16">Visualizamos las 309 instancias de la base de datos, con todas las características proporcionadas para una mayor comprensión de los datos</text>
+		<arrow id="3" start="(314.0, 387.0)" end="(265.0, 456.0)" fill="#C1272D" />
+		<text id="4" type="text/plain" rect="(324.0, 0.0, 381.0, 100.0)" font-family="MS Shell Dlg 2" font-size="16">Se realiza una distribución de los datos y se analiza especialmente la edad de los encuestados, observando el comportamiento normal de la gráfica y tomando un valor medio de edad de 62 años</text>
+		<arrow id="5" start="(576.9999999999999, 131.0)" end="(560.0, 91.0)" fill="#C1272D" />
+		<text id="6" type="text/plain" rect="(709.0, 122.0, 359.0, 140.0)" font-family="MS Shell Dlg 2" font-size="16">En estas 3 selecciones tomamos características específicas y valores impuestos por nosotros para realizar un análisis por medio del diagrama de Venn, se toman las características de si la persona es Fumadora, Alcohólica y si sufre de Presión Social.</text>
+		<arrow id="7" start="(611.0, 235.0)" end="(698.0, 183.0)" fill="#C1272D" />
+		<arrow id="8" start="(610.0, 325.0)" end="(700.0, 205.0)" fill="#C1272D" />
+		<arrow id="9" start="(610.0, 415.0)" end="(714.0, 246.0)" fill="#C1272D" />
+		<text id="10" type="text/plain" rect="(804.0, 405.0, 445.0, 183.0)" font-family="MS Shell Dlg 2" font-size="16">En el diagrama de Venn ingresan las características seleccionadas anteriormente para realizar un análisis por conjuntos y ver como se relacionan entre si, por ejemplo:
+De todos los encuestados, hay 61 personas que fuman y sufren de presión social, por lo que se pensaría que tiene relación entre si.
+Otro caso, es que hay 52 personas que fuman y son alcohólicas, dato que sirve para la parte de las conclusiones.</text>
+		<arrow id="11" start="(786.0, 358.0)" end="(837.0, 394.0)" fill="#C1272D" />
+		<text id="12" type="text/plain" rect="(119.0, 636.0, 440.0, 212.0)" font-family="MS Shell Dlg 2" font-size="16">En el diagrama de puntos tomamos en el eje X si sufren de cáncer de pulmón, y en el eje Y su edad, la forma de los puntos determina si sienten dolores en el pecho.
+Se puede observar que en la parte de sufrir cáncer de pulmón en SI, la mayoríad de los puntos presentan dolores en el pecho, lo cual nos indica una relación directa y un síntoma importante a tener en cuenta si la persona es fumadora.
+También se ve que el rango de edad con mayor riesgo de contraer este cáncer va entre 40 y 80 años.</text>
+		<arrow id="13" start="(538.0, 588.0)" end="(495.0, 634.0)" fill="#C1272D" />
+		<text id="14" type="text/plain" rect="(717.0, 632.0, 475.0, 336.0)" font-family="MS Shell Dlg 2" font-size="16">Conclusiones:
+-          En el caso de una tienda, gracias a los datos visualizados y la información obtenida, se puede pensar en una publicidad donde se ofrezcan bebidas alcohólicas a la par de cajetillas de cigarrillos para que ese porcentaje de gente que entra en ambas categorías gaste mas de su dinero allí. 
+-          En el caso de un programa de salud, hay opciones de crear campañas para evitar el cáncer de pulmón en personas con una edad cercana a los 62 años  (o desde una edad temprana-25 años) y dar a conocer los síntomas relacionados a éste. 
+-          En el caso de un programa social de acompañamiento juvenil, se pueden realizar charlas para evitar que las personas ingresen al mundo del consumo de bebidas alcohólicas y cigarrillo por culpa de la presión de personas exteriores o de un grupo social cercano. </text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVTwwAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZQojB5v
+cmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRolJOUKYGUfZQojAdhYnNw
+YXRolIxJRjovQW5hbMOtdGljYSBkZSBEYXRvcy9UYWxsZXJlc1Byw6FjdGljb3NPcmFuZ2UvMS9M
+dW5nX0NhbmNlcl9EYXRhc2V0LmNzdpSMBnByZWZpeJSMB2Jhc2VkaXKUjAdyZWxwYXRolIwXTHVu
+Z19DYW5jZXJfRGF0YXNldC5jc3aUjAV0aXRsZZSMAJSMBXNoZWV0lGgQjAtmaWxlX2Zvcm1hdJRO
+dWJoBimBlH2UKGgJjDhEOi9Qcm9nL09yYW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0
+YXNldHMvem9vLnRhYpRoC4wPc2FtcGxlLWRhdGFzZXRzlGgNjAd6b28udGFilGgPaBBoEWgQaBJO
+dWJoBimBlH2UKGgJjENEOi9Qcm9nL09yYW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0
+YXNldHMvYnJvd24tc2VsZWN0ZWQudGFilGgLaBZoDYwSYnJvd24tc2VsZWN0ZWQudGFilGgPaBBo
+EWgQaBJOdWJoBimBlH2UKGgJjDlEOi9Qcm9nL09yYW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFu
+Z2UvZGF0YXNldHMvaXJpcy50YWKUaAtoFmgNjAhpcmlzLnRhYpRoD2gQaBFoEGgSTnViaAYpgZR9
+lChoCYw8RDovUHJvZy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2RhdGFzZXRzL3Rp
+dGFuaWMudGFilGgLaBZoDYwLdGl0YW5pYy50YWKUaA9oEGgRaBBoEk51YmgGKYGUfZQoaAmMPEQ6
+L1Byb2cvT3JhbmdlL0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRhc2V0cy9ob3VzaW5nLnRh
+YpRoC2gWaA2MC2hvdXNpbmcudGFilGgPaBBoEWgQaBJOdWJoBimBlH2UKGgJjEJEOi9Qcm9nL09y
+YW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0YXNldHMvaGVhcnRfZGlzZWFzZS50YWKU
+aAtoFmgNjBFoZWFydF9kaXNlYXNlLnRhYpRoD2gQaBFoEGgSTnViZYwLcmVjZW50X3VybHOUXZSM
+VWh0dHBzOi8vZHJpdmUuZ29vZ2xlLmNvbS9maWxlL2QvMVhncDdtSTVKVHhBNTFLWktpa2VXNElI
+b3BLY1JDR1dML3ZpZXc/dXNwPWRyaXZlX2xpbmuUYYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAABQAAAAFIAAAQRAAACnQAAAUEAAABwAAAEEAAAApwAAAAAAAAAAAUAAAABQQAAAHAA
+AAQQAAACnJSMC3NoZWV0X25hbWVzlH2UjAZzb3VyY2WUSwGMA3VybJRoEIwNZG9tYWluX2VkaXRv
+cpR9lIwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQu
+c2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAl2YXJpYWJsZXOUXZRoNX2U
+aEFdlChdlCiMBkdFTkRFUpSMFE9yYW5nZS5kYXRhLnZhcmlhYmxllIwQRGlzY3JldGVWYXJpYWJs
+ZZSTlEsAjARGLCBNlIllXZQojANBR0WUaEeMEkNvbnRpbnVvdXNWYXJpYWJsZZSTlEsAaBCIZV2U
+KIwHU01PS0lOR5RoSUsAjAQxLCAylIhlXZQojA5ZRUxMT1dfRklOR0VSU5RoSUsAjAQxLCAylIhl
+XZQojAdBTlhJRVRZlGhJSwCMBDEsIDKUiGVdlCiMDVBFRVJfUFJFU1NVUkWUaElLAIwEMSwgMpSI
+ZV2UKIwPQ0hST05JQyBESVNFQVNFlGhJSwCMBDEsIDKUiGVdlCiMCEZBVElHVUUglGhJSwCMBDEs
+IDKUiGVdlCiMCEFMTEVSR1kglGhJSwCMBDEsIDKUiGVdlCiMCFdIRUVaSU5HlGhJSwCMBDEsIDKU
+iGVdlCiMEUFMQ09IT0wgQ09OU1VNSU5HlGhJSwCMBDEsIDKUiGVdlCiMCENPVUdISU5HlGhJSwCM
+BDEsIDKUiGVdlCiME1NIT1JUTkVTUyBPRiBCUkVBVEiUaElLAIwEMSwgMpSIZV2UKIwVU1dBTExP
+V0lORyBESUZGSUNVTFRZlGhJSwCMBDEsIDKUiGVdlCiMCkNIRVNUIFBBSU6UaElLAIwEMSwgMpSI
+ZV2UKIwLTFVOR19DQU5DRVKUaElLAIwHTk8sIFlFU5SJZWVzaDdLAXWMCmF0dHJpYnV0ZXOUKGhG
+XZQojAFGlIwBTZRlhpRoTEsChpRoUF2UKIwBMZSMATKUZYaUaFNdlChogGiBZYaUaFZdlChogGiB
+ZYaUaFldlChogGiBZYaUaFxdlChogGiBZYaUaF9dlChogGiBZYaUaGJdlChogGiBZYaUaGVdlCho
+gGiBZYaUaGhdlChogGiBZYaUaGtdlChogGiBZYaUaG5dlChogGiBZYaUaHFdlChogGiBZYaUaHRd
+lChogGiBZYaUaHddlCiMAk5PlIwDWUVTlGWGlHSUjAVtZXRhc5QpjApjbGFzc192YXJzlCmMEm1v
+ZGlmaWVkX3ZhcmlhYmxlc5RdlHViaDwpgZR9lChoP32UKIwJdmFyaWFibGVzlF2UjA1kb21haW5f
+ZWRpdG9ylH2UaKddlChdlCiMBGhhaXKUaElLAIwEMCwgMZSIZV2UKIwIZmVhdGhlcnOUaElLAIwE
+MCwgMZSIZV2UKIwEZWdnc5RoSUsAjAQwLCAxlIhlXZQojARtaWxrlGhJSwCMBDAsIDGUiGVdlCiM
+CGFpcmJvcm5llGhJSwCMBDAsIDGUiGVdlCiMB2FxdWF0aWOUaElLAIwEMCwgMZSIZV2UKIwIcHJl
+ZGF0b3KUaElLAIwEMCwgMZSIZV2UKIwHdG9vdGhlZJRoSUsAjAQwLCAxlIhlXZQojAhiYWNrYm9u
+ZZRoSUsAjAQwLCAxlIhlXZQojAhicmVhdGhlc5RoSUsAjAQwLCAxlIhlXZQojAh2ZW5vbW91c5Ro
+SUsAjAQwLCAxlIhlXZQojARmaW5zlGhJSwCMBDAsIDGUiGVdlCiMBGxlZ3OUaElLAIwQMCwgMiwg
+NCwgNSwgNiwgOJSIZV2UKIwEdGFpbJRoSUsAjAQwLCAxlIhlXZQojAhkb21lc3RpY5RoSUsAjAQw
+LCAxlIhlXZQojAdjYXRzaXpllGhJSwCMBDAsIDGUiGVdlCiMBHR5cGWUaElLAYw8YW1waGliaWFu
+LCBiaXJkLCBmaXNoLCBpbnNlY3QsIGludmVydGVicmF0ZSwgbWFtbWFsLCByZXB0aWxllIllXZQo
+jARuYW1llGhHjA5TdHJpbmdWYXJpYWJsZZSTlEsCaBCJZWVzaDdLAXVoeSiMBGhhaXKUXZQojAEw
+lGiAZYaUjAhmZWF0aGVyc5RdlCho5WiAZYaUjARlZ2dzlF2UKGjlaIBlhpSMBG1pbGuUXZQoaOVo
+gGWGlIwIYWlyYm9ybmWUXZQoaOVogGWGlIwHYXF1YXRpY5RdlCho5WiAZYaUjAhwcmVkYXRvcpRd
+lCho5WiAZYaUjAd0b290aGVklF2UKGjlaIBlhpSMCGJhY2tib25llF2UKGjlaIBlhpSMCGJyZWF0
+aGVzlF2UKGjlaIBlhpSMCHZlbm9tb3VzlF2UKGjlaIBlhpSMBGZpbnOUXZQoaOVogGWGlIwEbGVn
+c5RdlCho5WiBjAE0lIwBNZSMATaUjAE4lGWGlIwEdGFpbJRdlCho5WiAZYaUjAhkb21lc3RpY5Rd
+lCho5WiAZYaUjAdjYXRzaXpllF2UKGjlaIBlhpR0lGigjARuYW1llEsDhpSFlGihjAR0eXBllF2U
+KIwJYW1waGliaWFulIwEYmlyZJSMBGZpc2iUjAZpbnNlY3SUjAxpbnZlcnRlYnJhdGWUjAZtYW1t
+YWyUjAdyZXB0aWxllGWGlIWUaKJdlHViZXUu
+</properties>
+		<properties node_id="1" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xff\xff\xff\xff\xff\xf9\x00\x00\x05\x00\x00\x00\x02\xd0\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x04\xff\x00\x00\x02\xcf\x00\x00\x00\x00\x02\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x04\xff\x00\x00\x02\xcf', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVywIAAAAAAAB9lCiMCmF1dG9fYXBwbHmUiIwSY29udHJvbEFyZWFWaXNpYmxllIiMEGN1bXVs
+YXRpdmVfZGlzdHKUiYwTZml0dGVkX2Rpc3RyaWJ1dGlvbpRLAYwJaGlkZV9iYXJzlImMDWtkZV9z
+bW9vdGhpbmeUSwqME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAP/////////5AAAFAAAA
+AtAAAAAAAAAAFwAABP8AAALPAAAAAAIAAAAFAAAAAAAAAAAXAAAE/wAAAs+UjApzaG93X3Byb2Jz
+lImMDHNvcnRfYnlfZnJlcZSJjA9zdGFja2VkX2NvbHVtbnOUiYwLX192ZXJzaW9uX1+USwKMEGNv
+bnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9
+lCiMBnZhbHVlc5R9lCiMBGN2YXKUTkr+////hpSMDm51bWJlcl9vZl9iaW5zlEsASv7///+GlIwN
+c2VsZWN0ZWRfYmFyc5SPlEr+////hpSMA3ZhcpSMA0FHRZRLZoaUaAxLAnWMCmF0dHJpYnV0ZXOU
+fZQojAZHRU5ERVKUSwFoHksCjAdTTU9LSU5HlEsBjA5ZRUxMT1dfRklOR0VSU5RLAYwHQU5YSUVU
+WZRLAYwNUEVFUl9QUkVTU1VSRZRLAYwPQ0hST05JQyBESVNFQVNFlEsBjAhGQVRJR1VFIJRLAYwI
+QUxMRVJHWSCUSwGMCFdIRUVaSU5HlEsBjBFBTENPSE9MIENPTlNVTUlOR5RLAYwIQ09VR0hJTkeU
+SwGME1NIT1JUTkVTUyBPRiBCUkVBVEiUSwGMFVNXQUxMT1dJTkcgRElGRklDVUxUWZRLAYwKQ0hF
+U1QgUEFJTpRLAYwLTFVOR19DQU5DRVKUSwF1jAVtZXRhc5R9lHViYXUu
+</properties>
+		<properties node_id="3" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'output_duplicates': False, 'rowwise': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xff\xff\xff\xff\xff\xf9\x00\x00\x05\x00\x00\x00\x02\xd0\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x04\xff\x00\x00\x02\xcf\x00\x00\x00\x00\x02\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x04\xff\x00\x00\x02\xcf', 'selection': [], '__version__': 2, 'context_settings': []}</properties>
+		<properties node_id="4" format="pickle">gASVWwIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAABQAAAAHgAAAPBAAACdgAAAUEAAACWAAADwAAAAnUAAAAAAAAAAAUAAAABQQAAAJYA
+AAPAAAACdZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQojAdTTU9LSU5HlEsBSwBdlIwBMpRhdJRhaAhLAnWMCmF0dHJp
+YnV0ZXOUfZQojAZHRU5ERVKUSwGMA0FHRZRLAmgUSwGMDllFTExPV19GSU5HRVJTlEsBjAdBTlhJ
+RVRZlEsBjA1QRUVSX1BSRVNTVVJFlEsBjA9DSFJPTklDIERJU0VBU0WUSwGMCEZBVElHVUUglEsB
+jAhBTExFUkdZIJRLAYwIV0hFRVpJTkeUSwGMEUFMQ09IT0wgQ09OU1VNSU5HlEsBjAhDT1VHSElO
+R5RLAYwTU0hPUlRORVNTIE9GIEJSRUFUSJRLAYwVU1dBTExPV0lORyBESUZGSUNVTFRZlEsBjApD
+SEVTVCBQQUlOlEsBjAtMVU5HX0NBTkNFUpRLAXWMBW1ldGFzlH2UdWJhdS4=
+</properties>
+		<properties node_id="5" format="pickle">gASVWwIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAABQAAAAHgAAAPBAAACdgAAAUEAAACWAAADwAAAAnUAAAAAAAAAAAUAAAABQQAAAJYA
+AAPAAAACdZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQojA1QRUVSX1BSRVNTVVJFlEsBSwBdlIwBMpRhdJRhaAhLAnWM
+CmF0dHJpYnV0ZXOUfZQojAZHRU5ERVKUSwGMA0FHRZRLAowHU01PS0lOR5RLAYwOWUVMTE9XX0ZJ
+TkdFUlOUSwGMB0FOWElFVFmUSwFoFEsBjA9DSFJPTklDIERJU0VBU0WUSwGMCEZBVElHVUUglEsB
+jAhBTExFUkdZIJRLAYwIV0hFRVpJTkeUSwGMEUFMQ09IT0wgQ09OU1VNSU5HlEsBjAhDT1VHSElO
+R5RLAYwTU0hPUlRORVNTIE9GIEJSRUFUSJRLAYwVU1dBTExPV0lORyBESUZGSUNVTFRZlEsBjApD
+SEVTVCBQQUlOlEsBjAtMVU5HX0NBTkNFUpRLAXWMBW1ldGFzlH2UdWJhdS4=
+</properties>
+		<properties node_id="6" format="pickle">gASVWwIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBBwdXJn
+ZV9hdHRyaWJ1dGVzlImMDXB1cmdlX2NsYXNzZXOUiYwTc2F2ZWRXaWRnZXRHZW9tZXRyeZRDQgHZ
+0MsAAwAAAAABQAAAAHgAAAPBAAACdgAAAUEAAACWAAADwAAAAnUAAAAAAAAAAAUAAAABQQAAAJYA
+AAPAAAACdZSMEHVwZGF0ZV9vbl9jaGFuZ2WUiIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0
+dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVl
+c5R9lCiMCmNvbmRpdGlvbnOUXZQojBFBTENPSE9MIENPTlNVTUlOR5RLAUsAXZSMATKUYXSUYWgI
+SwJ1jAphdHRyaWJ1dGVzlH2UKIwGR0VOREVSlEsBjANBR0WUSwKMB1NNT0tJTkeUSwGMDllFTExP
+V19GSU5HRVJTlEsBjAdBTlhJRVRZlEsBjA1QRUVSX1BSRVNTVVJFlEsBjA9DSFJPTklDIERJU0VB
+U0WUSwGMCEZBVElHVUUglEsBjAhBTExFUkdZIJRLAYwIV0hFRVpJTkeUSwFoFEsBjAhDT1VHSElO
+R5RLAYwTU0hPUlRORVNTIE9GIEJSRUFUSJRLAYwVU1dBTExPV0lORyBESUZGSUNVTFRZlEsBjApD
+SEVTVCBQQUlOlEsBjAtMVU5HX0NBTkNFUpRLAXWMBW1ldGFzlH2UdWJhdS4=
+</properties>
+		<properties node_id="7" format="pickle">gASVeAMAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMC2F1dG9fc2FtcGxllIiMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD/////////+QAABQAAAALQ
+AAAAAAAAABcAAAT/AAACzwAAAAACAAAABQAAAAAAAAAAFwAABP8AAALPlIwJc2VsZWN0aW9ulE6M
+EXRvb2x0aXBfc2hvd3NfYWxslIiMD3Zpc3VhbF9zZXR0aW5nc5R9lIwFZ3JhcGiUfZQojAthbHBo
+YV92YWx1ZZRLn4wNY2xhc3NfZGVuc2l0eZSJjBFqaXR0ZXJfY29udGludW91c5SJjAtqaXR0ZXJf
+c2l6ZZRLAowTbGFiZWxfb25seV9zZWxlY3RlZJSJjBZvcnRob25vcm1hbF9yZWdyZXNzaW9ulImM
+C3BvaW50X3dpZHRolEsEjAlzaG93X2dyaWSUiIwLc2hvd19sZWdlbmSUiYwNc2hvd19yZWdfbGlu
+ZZSJdYwLX192ZXJzaW9uX1+USwWMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5z
+ZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCmF0dHJfY29sb3KUjANBR0WU
+S2aGlIwKYXR0cl9sYWJlbJROSv7///+GlIwKYXR0cl9zaGFwZZSMCkNIRVNUIFBBSU6US2WGlIwJ
+YXR0cl9zaXpllE5K/v///4aUjAZhdHRyX3iUjAtMVU5HX0NBTkNFUpRLZYaUjAZhdHRyX3mUaCFL
+ZoaUaAp9lGgWSwV1jAphdHRyaWJ1dGVzlH2UKIwGR0VOREVSlEsBaCFLAowHU01PS0lOR5RLAYwO
+WUVMTE9XX0ZJTkdFUlOUSwGMB0FOWElFVFmUSwGMDVBFRVJfUFJFU1NVUkWUSwGMD0NIUk9OSUMg
+RElTRUFTRZRLAYwIRkFUSUdVRSCUSwGMCEFMTEVSR1kglEsBjAhXSEVFWklOR5RLAYwRQUxDT0hP
+TCBDT05TVU1JTkeUSwGMCENPVUdISU5HlEsBjBNTSE9SVE5FU1MgT0YgQlJFQVRIlEsBjBVTV0FM
+TE9XSU5HIERJRkZJQ1VMVFmUSwFoJksBaCtLAXWMBW1ldGFzlH2UdWJhdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
